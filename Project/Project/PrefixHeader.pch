@@ -1,0 +1,66 @@
+//
+//  PrefixHeader.pch
+//
+//
+//  Created by 于兆海 on 15/8/20.
+//  Copyright (c) 2015年 Rain. All rights reserved.
+//
+
+#ifndef Health_iOS_PrefixHeader_pch
+#define Health_iOS_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "AppDelegate.h"
+
+#import "Util.h"
+
+#import "Global.h"
+
+#import <MJRefresh.h>
+
+#import "PPNetworkHelper.h"
+
+#import <UIImageView+WebCache.h>
+
+#import "BaseViewController.h"
+#import "TabBarViewController.h"
+
+#import <RDVTabBarController.h>
+#import <SVProgressHUD.h>
+#import <Masonry.h>
+
+#import <ZHTools_ObjC/ZHTools_ObjC.h>
+
+#import "LKWebViewController.h"
+
+#import "BaseTableViewCell.h"
+#import "BaseCollectionViewCell.h"
+
+#import "APIMacro.h"
+
+#define StatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define FullScreen       (StatusBarHeight >= 44.f)
+#define NavigationBarHeight       44
+#define SafeAreaHeight  (FullScreen ? 34.f : 0.f)
+#define TabBarHeight       (SafeAreaHeight + 49.f)
+
+
+#define IOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+
+#define DocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]
+
+#import <ZHTools_ObjC/ZHTools_ObjC.h>
+#import <ZHTools_ObjC/ZHButton.h>
+
+#import <ReactiveObjC.h>
+
+#define kHost @""
+
+#endif

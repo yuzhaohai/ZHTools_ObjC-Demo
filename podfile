@@ -1,0 +1,70 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+workspace 'WorkSpace'
+
+target 'Project' do
+  
+  platform :ios, '10.0'
+  
+  project 'Project/Project'
+  
+  pod 'mob_sharesdk'
+  pod 'mob_sharesdk/ShareSDKUI'
+  pod 'mob_sharesdk/ShareSDKExtension'
+  pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'
+  
+  pod 'AFNetworking'
+  
+  pod 'MBProgressHUD'
+  
+  pod 'RDVTabBarController'
+  
+  pod 'SDWebImage'
+  
+  pod 'MJRefresh'
+  
+  pod 'UzysAssetsPickerController'
+  
+  pod 'Masonry'
+  
+  pod 'ReactiveObjC'
+  
+  pod 'FMDB'
+  
+  pod 'Toast'
+  
+  pod 'Base64'
+  
+  pod 'TMCache'
+  
+  pod 'IQKeyboardManager'
+  
+  pod 'SVProgressHUD'
+  
+  pod 'TZImagePickerController'
+  
+  pod 'PGPickerView'
+  
+  pod 'ZHTools_ObjC',:git => 'https://github.com/yuzhaohai/ZHTools_ObjC.git'
+  
+  pod 'JCore', '2.3.6-noidfa'
+  
+  pod 'JPush'
+  
+  pod 'YYKit'
+  
+  pod 'TTTAttributedLabel'
+  
+  pod "PYSearch"
+  
+  pod 'AMapSearch-NO-IDFA'
+  pod 'AMapLocation-NO-IDFA'
+#  pod 'AMapNavi-NO-IDFA'
+
+  pod 'AliyunOSSiOS'
+  
+  pod 'AlipaySDK-iOS'
+  
+#  pod 'PGDatePicker'
+
+end
